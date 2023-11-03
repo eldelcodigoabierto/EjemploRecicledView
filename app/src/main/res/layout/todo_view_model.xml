@@ -15,9 +15,9 @@
         android:padding="10dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="10"
             android:orientation="vertical">
 
             <TextView
@@ -43,14 +43,30 @@
 
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/btnCompletadoToDoViewModel"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@android:drawable/checkbox_off_background" />
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnCompletadoToDoViewModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@android:drawable/checkbox_off_background" />
+
+            <ImageButton
+                android:id="@+id/btnDeleteToDoViewModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:src="@android:drawable/ic_menu_delete" />
+
+        </LinearLayout>
 
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
